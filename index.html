@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>DICT Free-Wifi</title>
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache" content="no-cache" />
+
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+</head>
+
+<body cz-shortcut-listen="true">
+    <div class="body-loading" id="body_loading">
+      <img src="./img/loading.gif" style="width: 320px; height: 240px" />
+  </div>
+
+  <main>
+    <div class="container">
+        <div class="flexbox">
+            <div>
+                <img src="./img/portal-government-logos.png" alt="Free-WiFi">
+            </div>
+            <div class="portal-free-wifi-logo-wrapper">
+                <img src="./img/portal-free-wifi-logo.png" alt="Free-WiFi" class="portal-free-wifi-logo">
+            </div>
+            <div class="flexbox-horizontal">
+                <strong>
+                    <div>#freewifi4all</div>
+                </strong>
+                <strong>
+                    <div>#AngWiFiNatin</div>
+                </strong>
+            </div>
+            <div class="button-container">
+                <button
+                onclick="IndexObj.changeLoginOption('pass')"
+                data-i18n="one_click_login"
+                class="shadow">
+                <strong>Press Button to <br/>Connect with Free WiFi for All</strong>
+            </button>
+        </div>
+        <div class="checkbox-wrapper">
+            <input type="checkbox" id="accept-terms">
+            <label for="accept-terms">
+                <strong>I Accept Free WiFi For All<br/><a id="terms-link">Terms and Conditions</a></strong>
+            </label>
+        </div>
+    </div>
+
+    <div id="terms-dialog">
+        <div class="flexbox">
+            <h3>Terms and Conditions on Acceptable Use of BBM Free WifiGuest WiFi Wireless Networking Acceptable Use Policy</h3>
+            <div>We are offering this guest WiFi wireless Internet service (the “Service”) according to this Free Public WiFi Acceptable Use Policy (the “Policy”) as a free, public service to visitors for the duration of their visits on locations where free Wifi is Accessible.  All users of this Service must agree to the terms of this Policy by check below.</div>
+            <div>We also have no control over information obtained through the Internet and cannot be held responsible for its content or accuracy. Use of the service is subject to the user’s own risk.We reserve the right to remove, block, filter, or restrict by any other means any material that, in our sole discretion, may be illegal, may subject us to liability, or may violate this Policy. We may cooperate with legal authorities and/or third parties in the investigation of any suspected or alleged crime or civil wrong.</div>
+            <div>Responsibilities of Service Users:</div>
+            <div>Users must respect all copyrights. Downloading or sharing copyrighted materials is strictly prohibited.  The running of programs, services, systems, processes, or servers by a single user or group of users that may substantially degrade network performance or accessibility will not be allowed. Electronic chain letters and mail bombs are prohibited. Connecting to "Peer to Peer" file sharing networks or downloading large files, such as CD ISO images, is also prohibited. Accessing another person's computer, computer account, files, or data without permission is prohibited. Attempting to circumvent or subvert system or network security measures is prohibited. Creating or running programs that are designed to identify security loopholes, to decrypt intentionally secured data, or to gain unauthorized access to any system is prohibited. Using any means to decode or otherwise obtain restricted passwords or access control information is prohibited. Forging the identity of a user or machine in an electronic communication is prohibited. Saturating network or computer resources to the exclusion of another's use, for example, by overloading the network with traffic such as emails or legitimate (file backup or archive) or malicious (denial of service attack) activity, is prohibited.  Users understand that wireless Internet access is inherently not secure, and users should adopt appropriate security measures when using the Service. We highly discourage users from conducting confidential transactions (such as online banking, credit card transactions, etc.) over any wireless network, including this Service. Users are responsible for the security of their own devices.</div>
+            <div>Limitations of Wireless Network Access:</div>
+            <div>We are not liable for any damage, undesired resource usage, or detrimental effects that may occur to a user's device and/or software while the user’s device is attached to the Service. The user is responsible for any actions taken from his or her device, whether intentional or unintentional, that damage or otherwise affect other devices or users of the Service. The user hereby releases the Company from liability for any loss, damage, security infringement, or injury which the user may sustain as a result of being allowed access to the Service. The user agrees to be solely responsible for any such loss, infringement, damage, or injury.</div>
+            <div>Terms of Service:</div>
+            <div>By accepting the terms and conditions, the user agrees to comply with and to be legally bound by the terms of this Policy. If this Policy or any terms of the Service are unacceptable or become unacceptable to the user, the user's only right shall be to terminate his or her use of the Service</div>
+            <div>Lawful Use:</div>
+            <div>The Service may only be used for lawful purposes and in a manner which we believe to be consistent with the rights of other users. The Service shall not be used in a manner which would violate any law or infringe any copyright, trademark, trade secret, right of publicity, privacy right, or any other right of any person or entity. The Service shall not be used for the purpose of accessing, transmitting, or storing material which is considered obscene, libelous or defamatory. Illegal acts may subject users to prosecution by local, state, federal, or international authorities. We may bring legal action to enjoin violations of this Policy and/or to collect damages, if any, caused by violations.</div>
+            <div>The user specifically agrees to the following conditions:</div>
+            <div>The user will use the Service only as permitted by applicable local and national laws, particularly the Republic Act 10175 or the Cybercrime Prevention Act of 2012; the Republic Act 9775 or the Anti Child Pornography Act of 2009; RA7610 or Special Protection of Children Against Abuse, Exploitation and Discrimination Act; and RA 10173 also known as the data privacy act of 2012.</div>
+            <div>The user will refrain from any actions that we consider to be negligent or malicious. The user will not send email containing viruses or other malicious or damaging software.</div>
+            <div>Changes to Service:</div>
+            <div>We reserve the right to change the Service offered, the features of the Service offered, the terms of this Policy, or its system without notice to the user.</div>
+            <div>By ticking the checkbox, you acknowledge that you understand and agree to this Policy.</div>
+
+        </div>
+        <button id="close-dialog">Close</button>
+    </div>
+</div>
+</main>
+
+<script type="text/javascript" src="./js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="./js/language.js"></script>
+<script type="text/javascript" src="./js/i18n/i18n.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+<script type="text/javascript" src="./loadConfig.json"></script>
+
+<script type="text/javascript">
+    document.getElementById('terms-link').addEventListener('click', function() {
+      var dialog = document.getElementById('terms-dialog');
+      dialog.style.display = 'block';
+      dialog.scrollTop = 0;
+  });
+
+    document.getElementById('close-dialog').addEventListener('click', function() {
+      document.getElementById('terms-dialog').style.display = 'none';
+  });
+
+    function toggleButtonState() {
+      var checkbox = document.getElementById('accept-terms');
+      var button = document.getElementById('wifi-link');
+
+      button.disabled = !checkbox.checked;
+  }
+
+  toggleButtonState();
+
+  document.getElementById('accept-terms').addEventListener('change', toggleButtonState);
+</script>
+</body>
+</html>

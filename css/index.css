@@ -1,0 +1,220 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+.container {
+    display:  flex;
+    justify-content:  center;
+    align-items:  center;
+    width:  100%;
+    height: 100svh;
+    padding: 20px;
+    background-image: url('../img/portal-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.portal-free-wifi-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container img.portal-free-wifi-logo {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.button-container {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    background-color: #06AE65;
+    border: none;
+    color: white;
+    padding: 15px 20px 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    opacity: 1;
+}
+.shadow {
+    box-shadow: 4px 4px 4px 1px rgba(0,0,0,0.4), inset 4px 4px 4px 1px rgba(255,255,255,0.7);
+}
+
+button:disabled {
+    opacity: 0.5;
+}
+
+.checkbox-wrapper {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #1673C1;
+    border-radius: 3px;
+    background-color: white;
+    margin-right: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked {
+    background-color: #1673C1;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(40deg);
+    position: absolute;
+    top: 2px;
+}
+
+.checkbox-wrapper label {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: inline-block;
+}
+
+.checkbox-wrapper label a {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #0887F3;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:  100%;
+    max-width:  420px;
+    padding:  30px;
+    margin: auto;
+    gap: 20px 0px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #2E2D4D;
+}
+
+.flexbox-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #2E2D4D;
+}
+
+#terms-dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 800px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+#terms-dialog h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#terms-dialog .flexbox {
+    text-align: left;
+}
+
+#terms-dialog .flexbox > div {
+    text-align: justify;
+}
+
+#terms-dialog button {
+    background-color: #0887F3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+@media (max-width: 1066px) {
+    .flexbox {
+        font-size: 14px;
+    }
+
+    .flexbox-horizontal {
+        gap: 0px 30px;
+    }
+
+    button {
+        padding: 10px 15px 5px 15px;
+        font-size: 14px;
+    }
+
+    #terms-dialog {
+        width: 70%;
+    }
+
+    #terms-dialog h3 {
+        font-size: 14px;
+    }
+
+    #terms-dialog .flexbox {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 781px) {
+    .flexbox-horizontal {
+        gap: 0px 30px;
+    }
+
+    .checkbox-wrapper label,
+    .checkbox-wrapper label a,
+    .flexbox-horizontal,
+    button {
+        font-size: 12px;
+    }
+}

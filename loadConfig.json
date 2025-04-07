@@ -1,0 +1,19 @@
+loadConfig({
+  "post_url": "https://e.gov.ph",
+  "oneclick": {
+    "oneclick_validity": "60",
+    "oneclick_qos": {
+      "up_rate": "20",
+      "down_rate": "200"
+    },
+    "oneclick_times": "10"
+  },
+  "custom_html": {
+    "login_options": [
+      "pass"
+    ],
+    "lang": [
+      "en_US",
+    ]
+  }
+});
